@@ -96,9 +96,9 @@ experimentos<- function (obj= list(circulo, circulos_iguales, circulos_dif, rosc
     samples100<- muestreos (shape, n= nsample [2])
     samples250<- muestreos (shape, n= nsample [3])
     } else {
-    samples50<- muestreos_error (shape,n=s1, p_error= errores)
-    samples100<- muestreos_error (shape,n=s2, p_error= errores)
-    samples250<- muestreos_error (shape,n=s3, p_error= errores)  
+    samples50<- muestreos_error (shape,n=nsample [1], p_error= errores)
+    samples100<- muestreos_error (shape,n=nsample [2], p_error= errores)
+    samples250<- muestreos_error (shape,n=nsample [3], p_error= errores)  
     }
     
     res[i:(i+n), 4]<- c(rep(nsample [1], total/3), rep(nsample [2], total/3), rep(nsample [3], total/3))
