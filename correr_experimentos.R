@@ -1,0 +1,32 @@
+res1<- experimentos (obj= list(circulo, circulos_iguales, circulos_dif, 
+                               rosco, roscos_iguales, roscos_dif, 
+                               star, stars_iguales, stars_dif), 
+                                nsample = c(50, 100, 250), 
+                                errores=0, 
+                                perc=c(100, 95, 90, 85, 80), 
+                                k=c(10, 15, 20, 25, 30), 
+                                r=c(2, 2.2, 2.4, 2.8, 3),
+                                a= c(5, 5.5, 6, 6.5, 7), 
+                                thresh= c(1, 5, 10, 15, 20))
+
+res2<- experimentos (obj= list(circulo, circulos_iguales, circulos_dif, 
+                               rosco, roscos_iguales, roscos_dif, 
+                               star, stars_iguales, stars_dif), 
+                     nsample = c(50, 100, 250), 
+                     errores=2, 
+                     perc=c(100, 95, 90, 85, 80), 
+                     k=c(10, 15, 20, 25, 30), 
+                     r=c(2, 2.2, 2.4, 2.8, 3),
+                     a= c(5, 5.5, 6, 6.5, 7), 
+                     thresh= c(1, 5, 10, 15, 20))
+
+res3<- experimentos (obj= list(circulo, circulos_iguales, circulos_dif, 
+                               rosco, roscos_iguales, roscos_dif, 
+                               star, stars_iguales, stars_dif), 
+                     nsample = c(50, 100, 250), 
+                     errores=10, 
+                     perc=c(100, 95, 90, 85, 80), 
+                     k=c(10, 15, 20, 25, 30), 
+                     r=c(2, 2.2, 2.4, 2.8, 3),
+                     a= c(5, 5.5, 6, 6.5, 7), 
+                     thresh= c(1, 5, 10, 15, 20))
